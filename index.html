@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Arthur - Gestor de Tráfego Pago</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header/Navigation -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <img src="imagens/Lucas.jpg" alt="Lucas Arthur" class="nav-brand-img">
+        Lucas Arthur
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#demonstracoes">Demos</a></li>
+        <li><a href="#comparativo">Comparativo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Tráfego Pago que Gera Resultados Reais</h1>
+        <p>Transformo investimento em anúncios em lucro consistente para seu negócio</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Ver Portfólio</button>
+          <button class="btn btn-secondary">Fale Comigo</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="imagens/tela principal.png" alt="Gráfico de crescimento">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <h2>Sobre Lucas Arthur</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Gestor de tráfego pago especializado em performance com mais de 5 anos transformando investimento em anúncios em resultados reais.</p>
+          <div class="stats">
+            <div class="stat">
+              <h3>+200</h3>
+              <p>Contas Gerenciadas</p>
+            </div>
+            <div class="stat">
+              <h3>+R$ 50M</h3>
+              <p>Investimento Gerenciado</p>
+            </div>
+            <div class="stat">
+              <h3>3.8x</h3>
+              <p>ROAS Médio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <h2>Serviços Especializados</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Google Ads</h3>
+          <p>Campanhas otimizadas para máximo ROI em pesquisa, shopping e display</p>
+        </div>
+        <div class="service-card">
+          <h3>Meta Ads</h3>
+          <p>Facebook e Instagram Ads com segmentação precisa e criativos de alta conversão</p>
+        </div>
+        <div class="service-card">
+          <h3>Consultoria</h3>
+          <p>Auditoria completa e estratégia personalizada para seu negócio</p>
+        </div>
+        <div class="service-card">
+          <h3>Lançamentos</h3>
+          <p>Estruturação completa de funis para produtos digitais</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Cases de Sucesso</h2>
+      <div class="portfolio-grid">
+        <div class="case-card">
+          <h3>E-commerce de Moda</h3>
+          <div class="case-results">
+            <span class="result">+340% ROAS</span>
+            <span class="result">-65% CPL</span>
+            <span class="result">+180% Vendas</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <h3>Consultoria Jurídica</h3>
+          <div class="case-results">
+            <span class="result">+250% Leads</span>
+            <span class="result">-45% CAC</span>
+            <span class="result">+120% Conversões</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <h3>Curso Online</h3>
+          <div class="case-results">
+            <span class="result">R$ 2.8M Faturamento</span>
+            <span class="result">4.2 ROAS</span>
+            <span class="result">+5.000 Alunos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projetos" class="projects">
+    <div class="container">
+      <h2>Meus Projetos/Parcerias</h2>
+      <p class="projects-subtitle">Colaborações estratégicas e projetos especiais que desenvolvo</p>
+      <div class="projects-grid">
+        <div class="project-card" onclick="openProjectModal('cassinos')">
+          <div class="project-icon">🎰</div>
+          <h3>Cassinos Online</h3>
+          <p>Parcerias com plataformas de jogos e cassinos online</p>
+          <span class="project-status">Ativo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeProjectModal()">&times;</span>
+      <div id="modalBody">
+        <!-- Content will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Demonstrações Section -->
+  <section id="demonstracoes" class="demos">
+    <div class="container">
+      <h2>🎯 Demonstrações Interativas</h2>
+      <p class="section-subtitle">Veja na prática como transformo investimento em resultados</p>
+      
+      <div class="demos-grid">
+
+        
+
+        
+        <div class="demo-card" onclick="openDemo('simulator')">
+          <div class="demo-icon">📈</div>
+          <h3>Comparativo de Alcance</h3>
+          <p>Cases reais: Adega e Pizzaria</p>
+        </div>
+        
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Modal -->
+  <div id="demoModal" class="modal">
+    <div class="modal-content demo-modal-content">
+      <span class="close" onclick="closeDemoModal()">&times;</span>
+      <div id="demoBody">
+        <!-- Content will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparativo de Alcance Section -->
+  <section id="comparativo" class="reach-comparison">
+    <div class="container">
+      <h2>📈 Comparativo de Alcance</h2>
+      <p class="section-subtitle">Veja a transformação real dos resultados</p>
+      
+      <div class="comparison-container">
+        <div class="comparison-toggle">
+          <button class="toggle-btn active" data-view="antes">ANTES</button>
+          <button class="toggle-btn" data-view="depois">DEPOIS</button>
+        </div>
+        
+        <div class="comparison-content">
+          <div class="comparison-image-container">
+            <div class="comparison-image active" id="antes-view">
+              <img src="imagens/antes.png" alt="Resultados Antes">
+              <div class="metrics-overlay">
+                <div class="metric">
+                  <span class="metric-label">Alcance</span>
+                  <span class="metric-value">2.847</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Impressões</span>
+                  <span class="metric-value">8.542</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">CTR</span>
+                  <span class="metric-value">1.2%</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">CPC</span>
+                  <span class="metric-value">R$ 2.45</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="comparison-image" id="depois-view">
+              <img src="imagens/depois.png" alt="Resultados Depois">
+              <div class="metrics-overlay">
+                <div class="metric">
+                  <span class="metric-label">Alcance</span>
+                  <span class="metric-value improvement">12.394</span>
+                  <span class="improvement-badge">+335%</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">Impressões</span>
+                  <span class="metric-value improvement">45.678</span>
+                  <span class="improvement-badge">+435%</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">CTR</span>
+                  <span class="metric-value improvement">3.8%</span>
+                  <span class="improvement-badge">+217%</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-label">CPC</span>
+                  <span class="metric-value improvement">R$ 0.89</span>
+                  <span class="improvement-badge">-64%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="comparison-stats">
+            <div class="stat-card">
+              <div class="stat-icon">📊</div>
+              <div class="stat-content">
+                <h4>Alcance Total</h4>
+                <div class="stat-comparison">
+                  <span class="before-stat">2.847</span>
+                  <span class="arrow">→</span>
+                  <span class="after-stat">12.394</span>
+                </div>
+                <span class="improvement-text">+335% de melhoria</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon">💰</div>
+              <div class="stat-content">
+                <h4>Custo por Clique</h4>
+                <div class="stat-comparison">
+                  <span class="before-stat">R$ 2.45</span>
+                  <span class="arrow">→</span>
+                  <span class="after-stat">R$ 0.89</span>
+                </div>
+                <span class="improvement-text">-64% de redução</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon">🎯</div>
+              <div class="stat-content">
+                <h4>Taxa de Cliques</h4>
+                <div class="stat-comparison">
+                  <span class="before-stat">1.2%</span>
+                  <span class="arrow">→</span>
+                  <span class="after-stat">3.8%</span>
+                </div>
+                <span class="improvement-text">+217% de melhoria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Experience Modal -->
+  <div id="experienceModal" class="modal">
+    <div class="modal-content experience-modal-content">
+      <span class="close" onclick="closeExperienceModal()">&times;</span>
+      <div id="experienceBody">
+        <!-- Content will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2>Vamos Conversar?</h2>
+      <p>Pronto para transformar seu investimento em tráfego em resultados reais?</p>
+      <div class="contact-buttons">
+        <a href="#" class="btn btn-whatsapp">WhatsApp</a>
+        <a href="#" class="btn btn-email">E-mail</a>
+        <a href="#" class="btn btn-linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Lucas Arthur - Gestor de Tráfego Pago</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+      <h4>💬 Lucas Arthur</h4>
+      <button id="chatbot-close">×</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <div class="message bot-message">
+        Olá! Sou o assistente do Lucas. Como posso ajudar?
+      </div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-input" placeholder="Digite sua mensagem...">
+      <button id="chatbot-send">Enviar</button>
+    </div>
+  </div>
+  
+  <button id="chatbot-toggle" class="chatbot-toggle">💬</button>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
